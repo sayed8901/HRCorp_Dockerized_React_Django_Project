@@ -1,0 +1,9 @@
+venv
+
+hrcorp_venv
+
+HRCorp/.env
+
+db.sqlite3
+
+__pycache__/

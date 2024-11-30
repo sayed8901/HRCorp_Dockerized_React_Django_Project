@@ -1,0 +1,32 @@
+/* styles for category */
+
+.animated-border {
+  position: relative;
+  display: inline-block;
+  color: indigo;
+  text-decoration: none;
+}
+
+.animated-border::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: indigo;
+  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s ease;
+}
+
+.animated-border:hover::after {
+  width: 100%;
+  left: 0;
+  background: indigo;
+}
+
+.animated-border:hover {
+  color: indigo; /* Keep the text color same when hovering */
+}
+

@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: white;
+}
+
+/* custom css library building using @apply for reusing purpose */
+.my-container{
+  @apply mx-auto sm:max-w-2xl md:max-w-full lg:max-w-screen-xl xl:max-w-screen-2xl px-4 md:px-8 lg:px-12 xl:px-16
+}
+
+.active{
+  @apply font-bold tracking-wide text-white transition-colors duration-100 bg-gradient
+}
+
+.bg-gradient{
+  background: linear-gradient(90deg, #2723f5 0%, #0acae8 100%)
+}
+
+.text-gradient{
+  background: linear-gradient(to right, #940be9, #0acae8); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+/* for lazy-loading */
+.LazyLoad {
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+.is-visible {
+  opacity: 1;
+}
+
+
+
+
+
+/* for custom rotate once animation */
+.animate-rotateOnce {
+  animation: rotateOnce 1s ease-in-out;
+}
+
+/* 360 rotating keyframes */
+@keyframes rotateOnce {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
