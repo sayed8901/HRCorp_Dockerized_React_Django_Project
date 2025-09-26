@@ -17,9 +17,9 @@ services:
     # Environment variables for the backend to connect to the database
     # Here, I am using my supabase database credentials (as defined in the .env file of the HRCorp main project directory)
     environment:
-      - POSTGRES_USER=postgres.fcgjhtzbzckcohxyrkre
-      - POSTGRES_PASSWORD=pAXH43HOXW6q2kBq
-      - POSTGRES_DB=postgres
+      - POSTGRES_USER=${DB_USER}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+      - POSTGRES_DB=${DB_NAME}
   
 
 
